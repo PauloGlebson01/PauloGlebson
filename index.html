@@ -4,160 +4,214 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Paulo Glebson | Cartão Digital Profissional</title>
+  <title>SoftPower | Cartão Digital Premium</title>
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+  <link rel="icon" type="image/png" href="assets/icon.png">
 </head>
 
-<body class="dark">
+<body>
 
-  <div class="card">
+  <div class="card-container">
+    <div class="card">
 
-    <!-- BOTÃO DARK / LIGHT DENTRO DO CARD -->
-    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
-      🌙
-    </button>
+      <!-- DECORAÇÃO DE FUNDO -->
+      <div class="card-bg-decoration">
+        <div class="glow-1"></div>
+        <div class="glow-2"></div>
+        <div class="glow-3"></div>
+      </div>
 
-    <!-- BOTÃO COMPARTILHAR -->
-    <button class="share-btn" id="shareBtn" aria-label="Compartilhar cartão">
-      🔗 Compartilhar
-    </button>
+      <!-- TOP BAR -->
+      <div class="top-bar">
+        <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="share-btn" id="shareBtn" aria-label="Compartilhar cartão">
+          <i class="fas fa-share-alt"></i> Compartilhar
+        </button>
+      </div>
 
-    <!-- MODAL DE COMPARTILHAMENTO -->
-    <div class="share-modal" id="shareModal">
-      <h3>Compartilhar cartão</h3>
+      <!-- MODAL DE COMPARTILHAMENTO -->
+      <div class="share-modal" id="shareModal">
+        <div class="share-modal-content">
+          <button class="close-share" id="closeShare"><i class="fas fa-times"></i></button>
+          
+          <div class="share-header">
+            <i class="fas fa-share-alt share-icon"></i>
+            <h3>Compartilhar Cartão</h3>
+            <p class="share-subtitle">Compartilhe seu cartão digital profissional</p>
+          </div>
 
-      <button class="share-action" id="copyLinkBtn">
-        📋 Copiar link
-      </button>
+          <div class="share-actions">
+            <button class="share-action" id="copyLinkBtn">
+              <i class="fas fa-copy"></i> Copiar Link
+            </button>
+            <button class="share-action primary" id="shareLinkBtn">
+              <i class="fas fa-share"></i> Compartilhar
+            </button>
+          </div>
 
-      <button class="share-action" id="shareLinkBtn">
-        📲 Compartilhar
-      </button>
-
-      <div class="qr-box">
-        <div class="qr-container">
-          <img class="qr"
-            src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://paulo-glebson.vercel.app"
-            alt="QR Code do Cartão Digital Profissional">
-          <img class="qr-center" src="./assets/Paulo glebson.png" alt="Logo paulo Glebson">
+          <div class="qr-box">
+            <div class="qr-container">
+              <img class="qr"
+                src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://softpowersolucoesdigitais.vercel.app"
+                alt="QR Code do Cartão Digital">
+              <img class="qr-center" src="assets/Paulo glebson.png" alt="Logo SoftPower">
+            </div>
+            <p><i class="fas fa-qrcode"></i> Escaneie o QR Code</p>
+          </div>
         </div>
-        <p>Escaneie o QR Code</p>
       </div>
 
-      <button class="close-share" id="closeShare">
-        Fechar
-      </button>
-    </div>
+      <!-- PERFIL -->
+      <div class="profile">
+        <div class="avatar-wrapper">
+          <div class="avatar-ring"></div>
+          <div class="avatar">
+            <img src="assets/Paulo glebson.png" alt="SoftPower">
+          </div>
+          <div class="status-dot"></div>
+        </div>
 
-    <!-- LOGO -->
-    <div class="logo">
-      <img src="./assets/Paulo glebson.png" alt="SoftPower Soluções Digitais">
-    </div>
+        <h1>Paulo Glebson</h1>
+        <p class="subtitle">SoftPower Soluções Digitais</p>
+        <div class="badge">
+          <i class="fas fa-rocket"></i>
+          <span>Tecnologia que Transforma</span>
+          <i class="fas fa-rocket"></i>
+        </div>
+      </div>
 
-    <!-- TÍTULOS -->
-    <h1>Paulo Glebson</h1>
-    <p class="subtitle"> Desenvolvedor Web </p>
+      <!-- PRODUTOS -->
+      <div class="products">
+        <div class="product-card softclick">
+          <div class="product-header">
+            <span class="product-icon"><i class="fas fa-cut"></i></span>
+            <div class="product-info">
+              <span class="product-name">SoftClick</span>
+              <span class="product-tag">Barbearias &amp; Beauty</span>
+            </div>
+          </div>
+          <div class="product-actions">
+            <a href="https://softpowersolucoesdigitais.vercel.app/softclick.html" class="btn-product" target="_blank">
+              <i class="fas fa-arrow-right"></i> Conhecer
+            </a>
+            <a href="https://wa.me/5583981011900?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20o%20SoftClick." class="btn-whatsapp" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
 
-    <!-- BOTÕES -->
-    <div class="buttons">
-      <a href="https://softpowersolucoesdigitais.vercel.app/educacao.html" class="btn-ebook" target="_blank" aria-label="Comprar Ebook SoftPower">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path fill="currentColor" d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 
-          2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2S15.9 22 17 22s2-.9 
-          2-2-.9-2-2-2zM7.2 14h9.45c.75 0 
-          1.41-.41 1.75-1.03l3.58-6.49a1 1 0 
-          00-.87-1.48H5.21L4.27 2H1v2h2l3.6 
-          7.59-1.35 2.44C4.52 15.37 5.48 17 
-          7 17h12v-2H7.42a.25.25 0 
-          01-.22-.37L7.2 14z" />
-        </svg>
-        <span>SoftPower Educação</span>
-      </a>
+        <div class="product-divider"></div>
 
-      <a href="https://api.whatsapp.com/send/?phone=5583981011900&text=Gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%20SoftPower%20."
-        class="whatsapp-btn" target="_blank" aria-label="Falar no WhatsApp">
-        <svg viewBox="0 0 32 32" aria-hidden="true">
-          <path fill="currentColor"
-            d="M16.01 3.2c-7.07 0-12.8 5.73-12.8 12.8 0 2.26.59 4.38 1.62 6.22L3.1 28.8l6.76-1.78a12.73 12.73 0 006.15 1.57c7.07 0 12.8-5.73 12.8-12.8S23.08 3.2 16.01 3.2z" />
-        </svg>
-        <span>WhatsApp</span>
-      </a>
+        <div class="product-card dedetize">
+          <div class="product-header">
+            <span class="product-icon"><i class="fas fa-bug"></i></span>
+            <div class="product-info">
+              <span class="product-name">Dedetize+</span>
+              <span class="product-tag">Controle de Pragas</span>
+            </div>
+          </div>
+          <div class="product-actions">
+            <a href="https://softpowersolucoesdigitais.vercel.app/dedetize.html" class="btn-product" target="_blank">
+              <i class="fas fa-arrow-right"></i> Conhecer
+            </a>
+            <a href="https://wa.me/5583981011900?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20o%20Dedetize+." class="btn-whatsapp" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
 
-      <a href="https://softpowersolucoesdigitais.vercel.app/landing.html" class="secondary" target="_blank" aria-label="Nossos Serviços">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path fill="currentColor"
-            d="M12 2a10 10 0 100 20 10 10 0 000-20zm7.93 9h-3.18a15.9 15.9 0 00-1.36-5.14A8.03 8.03 0 0119.93 11zM12 4.07c.9 1.24 1.62 3.12 2.04 5.93H9.96C10.38 7.19 11.1 5.31 12 4.07zM4.07 13h3.18a15.9 15.9 0 001.36 5.14A8.03 8.03 0 014.07 13zm3.18-2H4.07a8.03 8.03 0 013.54-5.14A15.9 15.9 0 007.25 11zm2.71 2h4.08c-.42 2.81-1.14 4.69-2.04 5.93-.9-1.24-1.62-3.12-2.04-5.93zm6.79 0h3.18a8.03 8.03 0 01-3.54 5.14A15.9 15.9 0 0016.75 13z" />
-        </svg>
-        <span> Nosso Site </span>
-      </a>
+        <div class="product-divider"></div>
 
-      <a href="https://instagram.com/softpower.digitais" class="secondary" target="_blank" aria-label="Instagram SoftPower">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path fill="currentColor"
-            d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.97.24 2.43.4.6.22 1.02.48 1.47.93.45.45.71.87.93 1.47.16.46.35 1.26.4 2.43.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.97-.4 2.43-.22.6-.48 1.02-.93 1.47-.45.45-.87.71-1.47.93-.46.16-1.26.35-2.43.4-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.97-.24-2.43-.4-.6-.22-1.02-.48-1.47-.93-.45-.45-.71-.87-.93-1.47-.16-.46-.35-1.26-.4-2.43C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.24-1.97.4-2.43.22-.6.48-1.02.93-1.47.45-.45.87-.71 1.47-.93.46-.16 1.26-.35 2.43-.4C8.42 2.17 8.8 2.16 12 2.16zM12 7.2a4.8 4.8 0 100 9.6 4.8 4.8 0 000-9.6zm0 7.92a3.12 3.12 0 110-6.24 3.12 3.12 0 010 6.24zm5.46-8.88a1.12 1.12 0 110 2.24 1.12 1.12 0 010-2.24z" />
-        </svg>
-        <span>Instagram</span>
-      </a>
-    </div>
+        <div class="product-card educacao">
+          <div class="product-header">
+            <span class="product-icon"><i class="fas fa-graduation-cap"></i></span>
+            <div class="product-info">
+              <span class="product-name">SoftPower Educação</span>
+              <span class="product-tag">Materiais Educativos</span>
+            </div>
+          </div>
+          <div class="product-actions">
+            <a href="https://softpowersolucoesdigitais.vercel.app/educacao.html" class="btn-product" target="_blank">
+              <i class="fas fa-arrow-right"></i> Conhecer
+            </a>
+            <a href="https://wa.me/5583981011900?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20Materiais%20Educativos." class="btn-whatsapp" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
 
-    <!-- RODAPÉ -->
-    <footer class="footer">
-      <div class="socials">
-        <!-- eBook -->
-        <a href="https://softpowersolucoesdigitais.vercel.app/educacao.html" target="_blank" aria-label="Comprar eBook">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path fill="currentColor"
-              d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 
-              2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2S15.9 22 17 22s2-.9 
-              2-2-.9-2-2-2zM7.2 14h9.45c.75 0 
-              1.41-.41 1.75-1.03l3.58-6.49a1 1 0 
-              00-.87-1.48H5.21L4.27 2H1v2h2l3.6 
-              7.59-1.35 2.44C4.52 15.37 5.48 17 
-              7 17h12v-2H7.42a.25.25 0 
-              01-.22-.37L7.2 14z" />
-          </svg>
+      <!-- CONTATO RÁPIDO -->
+      <div class="quick-contact">
+        <a href="https://wa.me/5583981011900" class="btn-contact whatsapp" target="_blank">
+          <i class="fab fa-whatsapp"></i> (83) 98101-1900
         </a>
-
-        <!-- WhatsApp -->
-        <a href="https://api.whatsapp.com/send/?phone=5583981011900&text=Gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%20SoftPower%20."
-          target="_blank" aria-label="WhatsApp">
-          <svg viewBox="0 0 32 32" aria-hidden="true">
-            <path fill="currentColor"
-              d="M16.01 3.2c-7.07 0-12.8 5.73-12.8 12.8 0 2.26.59 4.38 1.62 6.22L3.1 28.8l6.76-1.78a12.73 12.73 0 006.15 1.57c7.07 0 12.8-5.73 12.8-12.8S23.08 3.2 16.01 3.2z" />
-          </svg>
-        </a>
-
-        <!-- Nossos Serviços / Site -->
-        <a href="https://softpowersolucoesdigitais.vercel.app/landing.html" target="_blank" aria-label="Nossos Serviços">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path fill="currentColor"
-              d="M12 2a10 10 0 100 20 10 10 0 000-20zm7.93 9h-3.18a15.9 15.9 0 00-1.36-5.14A8.03 8.03 0 0119.93 11zM12 4.07c.9 1.24 1.62 3.12 2.04 5.93H9.96C10.38 7.19 11.1 5.31 12 4.07zM4.07 13h3.18a15.9 15.9 0 001.36 5.14A8.03 8.03 0 014.07 13zm3.18-2H4.07a8.03 8.03 0 013.54-5.14A15.9 15.9 0 007.25 11zm2.71 2h4.08c-.42 2.81-1.14 4.69-2.04 5.93-.9-1.24-1.62-3.12-2.04-5.93zm6.79 0h3.18a8.03 8.03 0 01-3.54 5.14A15.9 15.9 0 0016.75 13z" />
-          </svg>
-        </a>
-
-        <!-- Instagram -->
-        <a href="https://instagram.com/softpower.digitais" target="_blank" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path fill="currentColor"
-              d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.97.24 2.43.4.6.22 1.02.48 1.47.93.45.45.71.87.93 1.47.16.46.35 1.26.4 2.43.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.97-.4 2.43-.22.6-.48 1.02-.93 1.47-.45.45-.87.71-1.47.93-.46.16-1.26.35-2.43.4-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.97-.24-2.43-.4-.6-.22-1.02-.48-1.47-.93-.45-.45-.71-.87-.93-1.47-.16-.46-.35-1.26-.4-2.43C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.24-1.97.4-2.43.22-.6.48-1.02.93-1.47.45-.45.87-.71 1.47-.93.46-.16 1.26-.35 2.43-.4C8.42 2.17 8.8 2.16 12 2.16zM12 7.2a4.8 4.8 0 100 9.6 4.8 4.8 0 000-9.6zm0 7.92a3.12 3.12 0 110-6.24 3.12 3.12 0 010 6.24zm5.46-8.88a1.12 1.12 0 110 2.24 1.12 1.12 0 010-2.24z" />
-          </svg>
+        <a href="mailto:softpowersolucoesdigitais@gmail.com" class="btn-contact email" target="_blank">
+          <i class="fas fa-envelope"></i> E-mail
         </a>
       </div>
 
-      <p>© 2026 Paulo Glebson | Todos os direitos reservados</p>
-    </footer>
+      <!-- STATS -->
+      <div class="stats">
+        <div class="stat-item">
+          <span class="stat-number">3</span>
+          <span class="stat-label">Produtos</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">50+</span>
+          <span class="stat-label">Clientes</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">98%</span>
+          <span class="stat-label">Satisfação</span>
+        </div>
+      </div>
 
+      <!-- RODAPÉ -->
+      <div class="footer">
+        <div class="social-footer">
+          <a href="https://www.instagram.com/softpower.solucoes" target="_blank" aria-label="Softpower" class="social-link">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61593099233240" target="_blank" aria-label="Facebook" class="social-link">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/softclick.agenda" target="_blank" aria-label="Softclick" class="social-link">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://wa.me/5583986066093" target="_blank" aria-label="WhatsApp" class="social-link">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="https://www.instagram.com/dedetize.mais" target="_blank" aria-label="Dedetize+" class="social-link">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com/@softpower.solucoes" target="_blank" aria-label="TikTok" class="social-link">
+            <i class="fab fa-tiktok"></i>
+          </a>
+        </div>
+
+        <p class="copyright">
+          &copy; 2026 SoftPower Soluções Digitais | Todos os direitos reservados
+        </p>
+      </div>
+
+    </div>
   </div>
 
   <!-- JS -->
   <script src="script.js"></script>
 
 </body>
-
 </html>
