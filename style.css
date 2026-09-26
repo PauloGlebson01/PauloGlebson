@@ -1964,3 +1964,40 @@ body.light .close-share:hover {
     font-size: 12px;
   }
 }
+
+/* ============================================
+   ATENDEMESA — ESTILO NO CARTÃO DIGITAL
+   ============================================ */
+
+/* Card AtendeMesa */
+.product-card.atendemesa {
+    border-color: rgba(124, 58, 237, 0.25);
+}
+
+.product-card.atendemesa:hover {
+    border-color: rgba(124, 58, 237, 0.5);
+    box-shadow: 0 8px 30px rgba(124, 58, 237, 0.25);
+}
+
+/* Ícone AtendeMesa */
+.product-card.atendemesa .product-icon {
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.15), rgba(168, 85, 247, 0.15));
+    color: #a855f7;
+    border: 1px solid rgba(124, 58, 237, 0.3);
+}
+
+/* Nome AtendeMesa */
+.product-card.atendemesa .product-name {
+    color: #a855f7;
+}
+
+/* Botão AtendeMesa */
+.product-card.atendemesa .btn-product {
+    background: linear-gradient(135deg, #7c3aed, #6d28d9);
+    box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
+}
+
+.product-card.atendemesa .btn-product:hover {
+    box-shadow: 0 8px 25px rgba(124, 58, 237, 0.5);
+    transform: translateY(-2px);
+}
